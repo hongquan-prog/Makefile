@@ -1,0 +1,10 @@
+MOD_CFG := $(abspath module-cfg.mk)
+MOD_RULE := $(abspath module-rule.mk)
+CMD_CFG := $(abspath module-cmd.mk)
+PRO_CFG := $(abspath pro-cfg.mk)
+PRO_CMD := $(abspath pro-cmd.mk)
+PRO_RULE := $(abspath pro-rule.mk)
+
+include $(PRO_CFG)
+include $(PRO_CMD)
+include $(PRO_RULE)
